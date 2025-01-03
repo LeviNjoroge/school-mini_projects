@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int age, *P_age,n_age;
+
+int main(){
+
+    age =12;
+    *P_age=&age;
+
+    return 0;
+}

@@ -1,0 +1,30 @@
+
+Mark: 32
+Grade: F
+
+Mark: 78
+Grade: A
+
+Mark: 21
+Grade: F
+
+Mark: 90
+Grade: A
+
+Mark: 12
+Grade: F
+
+Mark: 100
+Grade: A
+
+Mark: 56
+Grade: C
+
+Mark: 54
+Grade: C
+
+Mark: 43
+Grade: D
+
+Mark: 64
+Grade: B

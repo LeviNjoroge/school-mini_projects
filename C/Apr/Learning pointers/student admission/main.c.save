@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+//a database system designed to take in student details and save them to an external file
+//write to file as text, and read as an array
+
+void student_signup();
+
+int main(){
+
+    student_signup();
+
+    return 0;
+}
+
+student_signup(){
+    char first_name[30],last_name[30],dob[10],reg_no[15];
+    int max;
+    printf("How may students to be registered? \n");
+    scanf("%d",&max);
+
+    char std_dtb[5][1000];
+    int i=1;
+    for(int c=0;c<max;c++){
+        for(int r=0;r<5;r++){
+            switch (r){
+                case 0:
+                    std_dtb[r][c]=i;
+                    i++;
+                    break;
+                case 1:
+                    printf("\nFirst name: ");
+                    scanf(" %s",&first_name);
+                    std_dtb[r][c]=first_name;
+                    break;
+                case 2:
+                    printf("Last name: ");
+                    scanf(" %s",&last_name);
+                    std_dtb[r][c]=last_name;
+                    break;
+                case 3:
+                    printf("Date of birth (DD/MM/YYYY): ");
+                    scanf(" %s",&dob);
+                    std_dtb[r][c]=dob;
+                    break;
+                case 4:
+                    printf("Registration number: ");
+                    scanf(" %s",&reg_no);
+                    std_dtb[r][c]=reg_no;
+                    break;
+            }
+        }
+    }
+
+    FILE *file = fopen("Student_database.txt","w");
+    for(int r=0;r<5;r++){
+        for(int c=0;c<max;c++){
+            fprintf(file,"%s",std_dtb[r][c]);
+        }
+    }
+
+    /*printf("Enter the following details: \n");
+    //printf("First name: ");
+    //scanf(" %s",&first_name);
+    printf("Last name: ");
+    scanf(" %s",&last_name);
+    printf("Date of birth (DD/MM/YYYY): ");
+    scanf(" %s",&dob);
+    printf("Registration number: ");
+    scanf(" %s",&reg_no);
+    printf("Thank you for filling the form, your details have been successfully updated as follows: \n\n");
+    printf("===========================================================================================\n");
+    printf("First name: %s\n",first_name);
+    printf("Last name: %s\n",last_name);
+    printf("Date of birth %s\n",dob);
+    printf("Registration number: %s\n",reg_no);
+    printf("==========================================================================================");
+*/
+}
