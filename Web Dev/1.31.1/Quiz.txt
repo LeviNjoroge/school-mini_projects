@@ -1,0 +1,8 @@
+Title: Welcome to programming 
+
+Assignment 1: Create a simple module in node.js that can work as a calculator when an event is invoked.
+
+1. Create a node.js file and give it with the .js extension (Example main.js)
+2. Add code to the file
+3. Save the file 
+4. Try using the web browser to access the server through the specific port you use in your code
