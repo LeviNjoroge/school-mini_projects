@@ -4,7 +4,7 @@
 }
 
 {
-    // the question
+    // the task
     var events = require('events');
     var eventEmitter = new events.EventEmitter();
 
@@ -15,9 +15,4 @@
     eventEmitter.on('click', myEventHandler);
 
     eventEmitter.emit('click');
-}
-
-{
-    // trying a simpler version
-    
 }
